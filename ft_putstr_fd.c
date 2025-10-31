@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:58:30 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/27 17:00:44 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:53:29 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
+	if (fd == -1)
+		return ;
 	i = 0;
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 04:02:56 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:14:26 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 05:05:08 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	size;
 	char	*new_arr;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	size = ft_strlen(s) + 1;
 	new_arr = malloc(size);

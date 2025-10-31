@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 21:39:29 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:14:51 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:56:43 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	size;
 	char	*new_arr;
 
+	if (!s1 || !set)
+		return (NULL);
 	size = ft_arr_size(s1, set);
 	if (!size)
 		return (ft_strdup(""));

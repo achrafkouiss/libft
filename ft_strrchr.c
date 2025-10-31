@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 09:51:09 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:12:57 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:46:39 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
+	if (!s)
+		return (NULL);
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
@@ -25,17 +27,16 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
 
-int	main(void)
-{
-	char	*s;
+// #include <stdio.h>
+// #include <string.h>
 
-	s = "achraf kouiss";
-	printf("%p\n", ft_strrchr(s, 'a'));
-	printf("%p\n", &s[0]);
-	printf("%c\n", *ft_strrchr(s, 'a'));
-}
-*/
+// int	main(void)
+// {
+// 	char	*s;
+
+// 	s = "achraf kouiss";
+// 	printf("%p\n", ft_strrchr(NULL, 'a'));
+// 	printf("%p\n", &s[0]);
+// 	printf("%c\n", *ft_strrchr(s, 'a'));
+// }

@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 11:18:40 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:12:03 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:52:29 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	unsigned char	*p;
 	size_t			i;
 
+	if (!s)
+		return (NULL);
 	p = (unsigned char *)s;
 	i = 0;
 	while (i < n)

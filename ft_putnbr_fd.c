@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 03:42:46 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/27 17:00:40 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:53:24 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ static void	ft_print_digits(int nb, int fd)
 
 void	ft_putnbr_fd(int nb, int fd)
 {
+	if (fd == -1)
+		return ;
 	if (nb == -2147483648)
 	{
 		write(fd, "-2147483648", 11);

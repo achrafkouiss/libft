@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 11:18:12 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:12:53 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:51:48 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!big || !little)
+		return (NULL);
 	i = 0;
 	if (little[i] == '\0')
 		return ((char *)big);

@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:18:58 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:10:42 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:35:34 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*pointer;
 	size_t			i;
 
+	if (!s)
+		return ;
 	i = 0;
 	pointer = (unsigned char *)s;
 	while (i < n)

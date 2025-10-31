@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 08:46:52 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:12:16 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:53:57 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,8 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	char	**new_arr;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	j = 0;
 	new_arr = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));

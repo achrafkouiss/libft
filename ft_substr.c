@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 01:33:28 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:13:08 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 04:57:18 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	s_len;
 	char	*new_arr;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
 	i = 0;
 	if (start >= s_len)
