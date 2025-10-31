@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 21:39:29 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 04:56:43 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:38:57 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	new_arr[j] = '\0';
 	return (new_arr);
 }
-// int	main(void)
-// {
-// 	char *s1 = "aaaakouissbbbbsssss";
-// 	char *set = "abc";
-
-// 	printf("%s\n", ft_strtrim(s1, set));
-// }

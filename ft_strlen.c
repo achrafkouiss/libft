@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 21:16:22 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/27 17:01:05 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:38:27 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*
-int	main()
-{
-	printf("%zu\n", ft_strlen("achraf"));
-}
-*/

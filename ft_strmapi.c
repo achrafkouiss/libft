@@ -6,18 +6,11 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 04:02:56 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 05:05:08 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:38:34 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// char     ft(unsigned int i, char c)
-// {
-//     if ((i % 2) == 0)
-//         c = 'a';
-//     return (c);
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -40,8 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_arr[i] = '\0';
 	return (new_arr);
 }
-
-// int main()
-// {
-//     printf("%s\n", ft_strmapi("kouiss mohammed", ft));
-// }

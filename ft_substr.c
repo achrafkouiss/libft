@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 01:33:28 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 04:57:18 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:39:01 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_arr[i] = '\0';
 	return (new_arr);
 }
-
-// int main()
-// {
-//     char    *s = "achraf kouiss";
-
-//     printf("%s\n", ft_substr(s, 4, 12));
-// }

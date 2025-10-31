@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:46:08 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/27 17:01:00 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:38:22 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (src_len + dst_len);
 }
-/*int	main(void)
-{
-	char dst[] = "achraf";
-	char src[] = "kouiss";
-	size_t size = 10;
-
-	printf("ft_strlcat = %zu\n", ft_strlcat(dst, src, size));
-	printf("dst = %s\n", dst);
-}*/

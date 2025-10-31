@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 03:42:46 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 04:53:24 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:38:05 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,3 @@ void	ft_putnbr_fd(int nb, int fd)
 	}
 	ft_print_digits(nb, fd);
 }
-
-// int main()
-// {
-//     ft_putnbr_fd(0, 1);
-//     printf("\n");
-// }

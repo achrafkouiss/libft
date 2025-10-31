@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 21:05:26 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/28 13:13:38 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/10/31 18:36:38 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,3 @@ char	*ft_itoa(int n)
 	ft_allo_arr(new_arr, n, len - 2);
 	return (new_arr);
 }
-
-// int main()
-// {
-//     printf("%s\n", ft_itoa(-2147483648));
-// }
