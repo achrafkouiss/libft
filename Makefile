@@ -15,8 +15,6 @@ SRC_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
 	 				ft_lstmap.c 
 OFILES_BONUS = $(SRC_BONUS:.c=.o)
 
-LFILE = $(shell (ls -t | head -1))
-
 all: ${NAME}
 
 ${NAME}: ${OFILES}
@@ -28,9 +26,6 @@ ${NAME}: ${OFILES}
 	@touch .bonus_files
 
 bonus: ${NAME} .bonus_files
-
-%.o: %.c
-	${CC} ${CFLAGS} -c $< -o $@
 
 clean:
 	rm -f ${OFILES} ${OFILES_BONUS} .bonus_files

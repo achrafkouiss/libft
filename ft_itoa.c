@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 21:05:26 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 18:36:38 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/01 04:07:33 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_itoa(int n)
 	if (n == 0)
 		return (ft_strdup("0"));
 	len = ft_arr_size(n) + 1;
-	new_arr = malloc(len);
+	new_arr = ft_calloc(len, sizeof(char));
 	if (!new_arr)
 		return (NULL);
 	new_arr[len - 1] = '\0';

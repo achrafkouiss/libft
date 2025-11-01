@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 02:03:49 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 18:38:25 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/01 04:34:51 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	{
 		while (i < size - 1 && src[i])
 		{
-			dst[i] = ((char *)src)[i];
+			dst[i] = src[i];
 			i++;
 		}
 		dst[i] = '\0';

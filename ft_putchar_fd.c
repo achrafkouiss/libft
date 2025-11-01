@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:55:06 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 04:53:04 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/01 05:40:04 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (fd == -1)
-		return ;
 	write(fd, &c, 1);
 }

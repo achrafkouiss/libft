@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 08:46:52 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 20:21:48 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/01 04:01:47 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,27 +90,12 @@ char	**ft_split(char const *s, char c)
 		while (s[i] && s[i] == c)
 			i++;
 		if (s[i])
-		{
 			new_arr[j] = ft_allo_arr(&s[i], c);
-			if (!new_arr[j++])
-				return (ft_free_heap(new_arr, j - 1));
-			while (s[i] && s[i] != c)
-				i++;
-		}
+		if (s[i] && !new_arr[j++])
+			return (ft_free_heap(new_arr, j - 1));
+		while (s[i] && s[i] != c)
+			i++;
 	}
 	new_arr[j] = NULL;
 	return (new_arr);
 }
-
-// while (s[i])
-// 	{
-// 		while ((s[i] == c) && s[i])
-// 			i++;
-// 		if (s[i])
-// 			new_arr[j] = ft_allo_arr(&s[i], c);
-// 		if (!new_arr[j])
-// 			return (ft_free_heap(new_arr, j));
-// 		j++;
-// 		while (!(s[i] == c) && s[i])
-// 			i++;
-// 	}
