@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 19:46:21 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 20:07:56 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/04 13:09:03 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	arr_size = size * nmemb;
 	new_arr = malloc(arr_size);
+	if (!new_arr)
+		return (NULL);
 	ft_bzero(new_arr, arr_size);
 	return (new_arr);
 }

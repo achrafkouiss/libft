@@ -6,7 +6,7 @@
 /*   By: akouiss <akouiss@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:31:51 by akouiss           #+#    #+#             */
-/*   Updated: 2025/10/31 18:22:18 by akouiss          ###   ########.fr       */
+/*   Updated: 2025/11/02 09:23:14 by akouiss          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	arr_size = s1_len + s2_len + 1;
-	new_arr = malloc(arr_size);
+	new_arr = ft_calloc(arr_size, sizeof(char));
 	if (!new_arr)
 		return (NULL);
 	ft_strlcpy(new_arr, s1, s1_len + 1);
