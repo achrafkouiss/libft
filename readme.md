@@ -79,5 +79,5 @@ typedef struct s_list
 
 ## About
 
-This repository **showcases my implementation of Libft** with working examples of all functions and optional linked list utilities. It serves both as a **learning artifact** and as a **reusable C library** for future projects.
+This repository **showcases my implementation of Libft**. It serves both as a **learning artifact** and as a **reusable C library** for future projects.
 
